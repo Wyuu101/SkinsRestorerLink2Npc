@@ -1,0 +1,19 @@
+name: SkinsRestorerLink2Npc
+version: '${project.version}'
+main: net.dxzzz.skinsrestorerlink2npc.SkinsRestorerLink2Npc
+depend: [SkinsRestorer]
+commands:
+  dxzskin:
+    description: "皮肤系统-管理员用"
+    permission: SkinsRestorerLink2Npc.Operator
+    permission-message: ""
+    usage: "§b皮肤系统:\n
+            §e/dxzskin update <player> §f- §a为玩家刷新正版皮肤\n
+            §e/dxzskin clear <player> §f- §a清除玩家的皮肤\n
+            §e/dxzskin set <player> <skinName> §f- §a将玩家的皮肤设置为某个正版玩家的皮肤\n
+            §e/dxzskin url <player> <skinURL> §f- §a将玩家的皮肤设置为某个URL指定的皮肤\n"
+
+
+permissions:
+  SkinsRestorerLink2Npc.Operator:
+    default: op
